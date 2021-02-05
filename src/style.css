@@ -89,3 +89,13 @@ p {
   width: 100%;
   /* border: 2px solid blue; */
 }
+
+/* Add white space between top of this section and the header above it */
+.categories {
+  margin: 70px 0;
+}
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
