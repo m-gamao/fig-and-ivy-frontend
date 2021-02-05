@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: rgb(206, 13, 103);
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -30,7 +38,7 @@ a {
 p {
   color: #555;
 }
-container {
+.container {
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
@@ -48,27 +56,24 @@ container {
 }
 .col-2 img {
   max-width: 100%;
-  padding: 50px; 0;
+  padding: 50px 0;
 }
 .col-2 h1 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
-  margin: 25px 0;
+  margin: 25px 25px;
 }
 .btn {
   display: inline-block;
-  background: rgb(235, 48, 135); 
+  background: rgb(235, 48, 135);
   color: #fff;
   padding: 8px 30px;
-  margin: 30px 0;
+  margin: 30px 30px;
   border-radius: 30px;
-
 }
-  
-
-
-
-
-
-
-
+.header {
+  background: radial-gradient(#fff, #fccadf);
+}
+.header .row {
+  margin-top: 70px;
+}
