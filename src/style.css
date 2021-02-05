@@ -76,5 +76,16 @@ p {
   height: 100vh;
 }
 .header .row {
-  margin-top: 70px;
+  /* margin-top: 20px; */
+  display: flex;
+}
+.header .image_wrapper {
+  width: 385px;
+  /* border: 1px solid red; */
+  margin-left: 55px;
+  /* margin-bottom: 20px; */
+}
+.header .image_wrapper img {
+  width: 100%;
+  /* border: 2px solid blue; */
 }
