@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: rgb(32, 31, 31);
 }
 .logo {
   font-family: "Playfair Display", serif;
@@ -30,6 +31,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-right: 20px;
+  /* font-size: 20px; */
 }
 a {
   text-decoration: none;
@@ -60,15 +62,22 @@ p {
 }
 .col-2 h1 {
   font-size: 40px;
-  line-height: 60px;
+  line-height: 30px;
   margin: 25px 25px;
 }
+.col-2 h2 {
+  font-size: 20px;
+  line-height: 40px;
+  margin: 25px 25px;
+  font-family: "Playfair Display", serif;
+}
+
 .btn {
   display: inline-block;
   background: rgb(235, 48, 135);
   color: #fff;
   padding: 8px 30px;
-  margin: 30px 30px;
+  margin: 50px 30px;
   border-radius: 30px;
 }
 .header {
@@ -96,6 +105,27 @@ p {
 }
 .col-3 {
   flex-basis: 30%;
-  min-width: 250px;
-  margin-bottom: 30px;
+  /* min-width: 250px; */
+  /* margin-bottom: 30px; */
+}
+.col-3 img {
+  float: left;
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+.col-4 img {
+  width: 100%;
 }
