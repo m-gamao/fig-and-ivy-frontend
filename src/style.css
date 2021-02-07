@@ -6,22 +6,36 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lexend Mega", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   color: rgb(32, 31, 31);
 }
 .logo {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   color: rgb(206, 13, 103);
+  text-align: center;
+  padding-bottom: 30px;
+  background: radial-gradient(#fff, #fde4ef);
+  margin: 16px;
+}
+
+/* Style the header */
+.header {
+  padding: 10px 10px;
+  background: rgb(4, 5, 4);
+  color: #f1f1f1;
+  height: 70px;
+  text-align: center;
 }
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 nav {
   flex: 1;
-  text-align: right;
+  text-align: center;
 }
 /* no bullets, use list style type none */
 nav ul {
@@ -35,10 +49,25 @@ nav ul li {
 }
 a {
   text-decoration: none;
-  color: #555;
+  color: rgb(245, 236, 236);
 }
 p {
-  color: #555;
+  color: rgb(235, 217, 217);
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
 }
 .container {
   max-width: 1300px;
@@ -80,26 +109,26 @@ p {
   margin: 50px 30px;
   border-radius: 30px;
 }
-.header {
+.splash {
   background: radial-gradient(#fff, #fccadf);
   height: 100vh;
 }
-.header .row {
+.splash .row {
   /* margin-top: 20px; */
   display: flex;
 }
-.header .image_wrapper {
+.splash .image_wrapper {
   width: 385px;
   /* border: 1px solid red; */
   margin-left: 55px;
   /* margin-bottom: 20px; */
 }
-.header .image_wrapper img {
+.splash .image_wrapper img {
   width: 100%;
   /* border: 2px solid blue; */
 }
 
-/* Add white space between top of this section and the header above it */
+/* Add white space between top of this section and the splash above it */
 .categories {
   margin: 70px 0;
 }
@@ -170,4 +199,22 @@ p {
 /* lets the image of the product float 5px when you hover over it with the mouse */
 .col-4:hover {
   transform: translateY(-5px);
+}
+.offer {
+  background: radial-gradient(#fff, #fccadf);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.col-2 .offer-img {
+  padding: 50px;
+}
+.small {
+  color: #555;
+}
+
+.testimonial .col-3 img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
