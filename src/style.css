@@ -126,12 +126,19 @@ p {
 .col-4 {
   flex-basis: 25%;
   padding: 10px;
-  min-width: 200px;
+  /* min-width: 200px; */
+  width: 100px;
+  height: auto;
   margin-bottom: 50px;
   transition: transform 0.5s;
 }
 .col-4 img {
-  width: 100%;
+  float: none;
+  object-fit: scale-down;
+  max-width: 100%;
+}
+.col-4 p {
+  font-size: 14px;
 }
 .title {
   text-align: center;
@@ -155,9 +162,7 @@ p {
   color: #555;
   font-weight: normal;
 }
-.col-4 p {
-  font-size: 14px;
-}
+
 .rating .fa {
   color: rgb(235, 48, 135);
 }
