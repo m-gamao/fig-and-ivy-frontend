@@ -26,14 +26,20 @@ body {
   opacity: 0.3;
   z-index: 2;
 }
+.top-container .nav-right {
+  position: absolute;
+  right: 40px;
+}
 
-/* Style the header */
+/*-------------------- HEADER AND NAV BAR ---------------------------- */
+
 .header {
   padding: 10px 10px;
   background: rgb(4, 5, 4);
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
   height: 62px;
   text-align: center;
+  font-size: 18px;
 }
 .navbar {
   display: flex;
@@ -44,6 +50,7 @@ nav {
   flex: 1;
   text-align: center;
 }
+
 /* no bullets, use list style type none */
 nav ul {
   display: inline-block;
@@ -61,6 +68,7 @@ a {
 p {
   color: rgb(235, 217, 217);
 }
+
 /* Page content */
 .content {
   padding: 10px;
@@ -247,6 +255,7 @@ p {
   color: #555;
 }
 /* ------------------------ TESTIMONIALS ------------------------ */
+
 .testimonial .col-3 img {
   float: left;
   width: 200px;
@@ -256,17 +265,43 @@ p {
 .testimonial p {
   color: rgb(39, 37, 37);
 }
-/* ------------------ AS SEEN IN ---------------------- */
-.as-seen-in {
-  max-width: 700px;
-  margin: auto;
-  padding-top: ;
-  padding-left: 10px;
-  padding-right: 10px;
+.testimonial {
+  padding-bottom: 50px;
 }
-.as-seen-in img {
-  float: none;
-  object-fit: scale-down;
-  max-width: 50%;
+
+/* ------------------------- AS SEEN IN ---------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  /* border: solid red; */
+  max-width: 1000px;
   align-items: center;
+  margin-left: 310px;
 }
+.grid > div {
+  /* background: black; */
+  padding: 2rem;
+}
+.grid > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.grid > div {
+  /* ... */
+  display: grid;
+}
+.grid > div::before,
+.grid > div > img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* --------------------------- FOOTER ------------------------------ */
+/* Footer removed from css file. See Extra Code file. */

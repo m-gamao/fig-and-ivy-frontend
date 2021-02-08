@@ -1,0 +1,42 @@
+********   Footer:   ********************************
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(13, 14, 13);
+  color: white;
+  /* color: #f1f1f1; */
+  text-align: center;
+  padding: 100px 10px;
+  height: 10px;
+}
+.fbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+fnav {
+  flex: 1;
+  text-align: center;
+}
+
+no bullets, use list style type none
+fnav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+fnav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  /* font-size: 20px; */
+}
+a {
+  text-decoration: none;
+  color: rgb(245, 236, 236);
+}
+p {
+  color: rgb(235, 217, 217);
+}
+__________________________________________________________________________
