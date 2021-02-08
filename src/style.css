@@ -12,12 +12,12 @@ body {
 }
 .logo {
   font-family: "Playfair Display", serif;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(206, 13, 103);
   text-align: center;
   /* padding-bottom: 10px; */
-  background: radial-gradient(#fff, #fde4ef);
-  margin: 16px;
+  background: radial-gradient(#fff, #fdddeb);
+  margin: 10px;
   z-index: 1;
 }
 .logo img {
@@ -62,7 +62,7 @@ p {
 }
 /* Page content */
 .content {
-  padding: 16px;
+  padding: 10px;
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -76,7 +76,7 @@ p {
   padding-top: 102px;
 }
 .container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -98,7 +98,7 @@ p {
 .col-2 h1 {
   font-size: 32px;
   line-height: 50px;
-  margin: 25px 25px;
+  margin: 25px 20px;
 }
 .col-2 h2 {
   font-size: 25px;
@@ -106,13 +106,12 @@ p {
   margin: 25px 25px;
   font-family: "Playfair Display", serif;
 }
-
 .btn {
   display: inline-block;
   background: rgb(235, 48, 135);
   color: #fff;
   padding: 8px 30px;
-  margin: 50px 30px;
+  margin: 40px 50px;
   border-radius: 30px;
 }
 .splash {
@@ -194,12 +193,13 @@ p {
   transform: translateX(-50%);
 }
 .h4 {
-  color: #555;
+  color: rgb(82, 76, 76);
   font-weight: normal;
 }
 
 .rating .fa {
-  color: rgb(235, 48, 135);
+  /* color: rgb(167, 134, 149); */
+  color: rgb(206, 13, 103);
 }
 
 /* lets the image of the product float 5px when you hover over it with the mouse */
