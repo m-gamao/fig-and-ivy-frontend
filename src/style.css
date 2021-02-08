@@ -278,6 +278,7 @@ p {
 }
 .testimonial {
   padding-bottom: 50px;
+  max-width: 1300px;
 }
 
 /* Need to make this transition smoother */
@@ -289,6 +290,12 @@ p {
 .fa.fa-quote-left {
   font-size: 34px;
   color: rgb(206, 13, 103);
+}
+
+.testimonial .col-3 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
 }
 /* ------------------------- AS SEEN IN ---------------------- */
 
@@ -324,5 +331,10 @@ p {
   object-fit: contain;
 }
 
+/* ---------------------------- BRANDS SECTION ------------------------------- */
+
+/* SEE VIDEO AT 57:16 MINS FOR THIS PART  */
+
 /* --------------------------- FOOTER ------------------------------ */
 /* Footer removed from css file. See Extra Code file. */
+/* SEE VIDEO AT 100 MINS FOR THIS */
