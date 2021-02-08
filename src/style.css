@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Lexend Mega", sans-serif;
+  font-family: "Chivo", sans-serif;
+  /* font-family: "Lexend Mega", sans-serif; */
   /* font-family: "Roboto", sans-serif; */
   color: rgb(32, 31, 31);
 }
@@ -101,7 +102,7 @@ p {
   margin: 25px 20px;
 }
 .col-2 h2 {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 40px;
   margin: 25px 25px;
   font-family: "Playfair Display", serif;
@@ -206,13 +207,20 @@ p {
 .col-4:hover {
   transform: translateY(-5px);
 }
+
+/* --------------------- OFFER ---------------------------------- */
+
 .offer {
   background: radial-gradient(#fff, #fccadf);
   margin-top: 80px;
   padding: 30px 0;
 }
 .col-2 .offer-img {
-  padding: 50px;
+  padding: 30px;
+  object-fit: scale-down;
+}
+.col-2 {
+  text-align: center;
 }
 .small {
   color: #555;
@@ -222,10 +230,23 @@ p {
   color: #555;
   font-size: 20px;
 }
-.offer h2 {
-  font-size: 28px;
+.offer p2 {
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 20px;
+  color: #555;
 }
-
+.offer p3 {
+  line-height: 40px;
+  font-weight: 100;
+  font-size: 28px;
+  color: #555;
+}
+.offer h2 {
+  font-size: 31px;
+  color: #555;
+}
+/* ------------------------ TESTIMONIALS ------------------------ */
 .testimonial .col-3 img {
   float: left;
   width: 200px;
@@ -233,5 +254,19 @@ p {
   object-fit: cover;
 }
 .testimonial p {
-  color: grey;
+  color: rgb(39, 37, 37);
+}
+/* ------------------ AS SEEN IN ---------------------- */
+.as-seen-in {
+  max-width: 700px;
+  margin: auto;
+  padding-top: ;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.as-seen-in img {
+  float: none;
+  object-fit: scale-down;
+  max-width: 50%;
+  align-items: center;
 }
