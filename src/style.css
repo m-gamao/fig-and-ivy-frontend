@@ -182,6 +182,7 @@ p {
 }
 .col-4 p {
   font-size: 14px;
+  color: rgb(7, 7, 7);
 }
 .title {
   text-align: center;
@@ -297,6 +298,35 @@ p {
   color: #555;
   font-size: 16px;
 }
+
+/* ---------------------------- BRANDS SECTION ------------------------------- */
+
+/* SEE VIDEO AT 57:16 MINS FOR THIS PART  */
+
+.brands {
+  margin: 100px auto;
+}
+
+.col-5 {
+  width: 160px;
+  filter: grayscale(50%);
+}
+
+.col-5 img {
+  display: flex;
+  grid-template-columns: auto;
+  width: 100;
+  cursor: pointer;
+  filter: grayscale(50%);
+  float: none;
+  object-fit: scale-down;
+  max-width: 100%;
+}
+
+/* --------------------------- FOOTER ------------------------------ */
+/* Footer removed from css file. See Extra Code file. */
+/* SEE VIDEO AT 100 MINS FOR THIS */
+
 /* ------------------------- AS SEEN IN ---------------------- */
 
 .grid {
@@ -330,11 +360,3 @@ p {
   height: 100%;
   object-fit: contain;
 }
-
-/* ---------------------------- BRANDS SECTION ------------------------------- */
-
-/* SEE VIDEO AT 57:16 MINS FOR THIS PART  */
-
-/* --------------------------- FOOTER ------------------------------ */
-/* Footer removed from css file. See Extra Code file. */
-/* SEE VIDEO AT 100 MINS FOR THIS */
