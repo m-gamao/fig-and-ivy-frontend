@@ -256,19 +256,40 @@ p {
 }
 /* ------------------------ TESTIMONIALS ------------------------ */
 
+.testimonial .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 .testimonial .col-3 img {
-  float: left;
-  width: 200px;
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
   height: 200px;
-  object-fit: cover;
+  padding: 40px 20px;
+  transition: transform 0.5s;
 }
 .testimonial p {
   color: rgb(39, 37, 37);
+  font-size: 12px 0;
+  /* color: #777; */
 }
 .testimonial {
   padding-bottom: 50px;
 }
 
+/* Need to make this transition smoother */
+.testimonial .col-3:hover {
+  transform: translateY(-10px);
+  /* transform: translateZ(-10px); */
+  /* rotateZ(360deg); */
+}
+.fa.fa-quote-left {
+  font-size: 34px;
+  color: rgb(206, 13, 103);
+}
 /* ------------------------- AS SEEN IN ---------------------- */
 
 .grid {
