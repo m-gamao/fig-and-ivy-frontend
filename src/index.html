@@ -7,6 +7,7 @@
     <meta charset="UTF-8" />
     <title>Fig & Ivy E-commerce store</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -22,6 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
   <div class="top-container">
         <div class="logo">
           <h1>Fig & Ivy</h1>
@@ -288,6 +290,8 @@
 
  <!---------------------- testimonials --------------------------->
 
+ <div class="main-gallery js-flickity"
+  data-flickity-options='{ "cellAlign": "left", "contain": true }'>
  <h2 class="title">Testimonials</h2>
  <div class="testimonial">
   <div class="small-container">
@@ -309,11 +313,11 @@
           <img src="images/avatar1.jpg"/>
 
       </div>
-            <div class="col-3">
+        <div class="col-3">
         <i class="fa fa-quote-left"></i>
         <p>
           They have really great prices for all your favorite fragrances and cosmetics. High quality products and they ship on time :)
-          <!-- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
+           
         </p>
           <div class="rating">
               <i class="fa fa-star"></i>
@@ -348,6 +352,7 @@
       </div> 
     </div>
   </div>
+</div>
  </div>
  </div>
 

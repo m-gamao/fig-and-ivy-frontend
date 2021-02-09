@@ -267,6 +267,10 @@ p {
   max-width: 300px;
 }
 
+@media screen and ( min-width: 768px ) {
+  /* half-width cells for larger devices */
+  .testimonial .col-3 { width: 50%; }
+}
 .testimonial .col-3 img {
   /* width: 50px; */
   margin-top: 19px;
