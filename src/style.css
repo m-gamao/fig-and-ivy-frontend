@@ -238,6 +238,7 @@ p {
 .offer p {
   color: #555;
   font-size: 20px;
+  font-weight: bold;
 }
 .offer p2 {
   line-height: 30px;
@@ -247,13 +248,14 @@ p {
 }
 .offer p3 {
   line-height: 40px;
-  font-weight: 100;
+  font-weight: bold;
   font-size: 28px;
   color: #555;
 }
 .offer h2 {
   font-size: 31px;
   color: #555;
+  font-family: 80;
 }
 /* ------------------------ TESTIMONIALS ------------------------ */
 
@@ -262,15 +264,18 @@ p {
   padding: 40px 20px;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  max-width: 300px;
 }
 
 .testimonial .col-3 img {
-  width: 50px;
-  margin-top: 20px;
-  border-radius: 50%;
-  height: 200px;
-  padding: 40px 20px;
+  /* width: 50px; */
+  margin-top: 19px;
+  /* border-radius: 50%; */
+  height: 120px;
+  object-fit: scale-down;
+  /* padding: 40px 20px; */
   transition: transform 0.5s;
+  align-items: center;
 }
 .testimonial p {
   color: rgb(39, 37, 37);
@@ -283,11 +288,12 @@ p {
 }
 
 /* Need to make this transition smoother */
-.testimonial .col-3:hover {
-  transform: translateY(-10px);
+/* .testimonial .col-3:hover {
+  transform: translateY(-10px); */
   /* transform: translateZ(-10px); */
   /* rotateZ(360deg); */
 }
+
 .fa.fa-quote-left {
   font-size: 34px;
   color: rgb(206, 13, 103);
@@ -315,12 +321,11 @@ p {
 .col-5 img {
   display: flex;
   grid-template-columns: auto;
-  width: 100;
   cursor: pointer;
   filter: grayscale(50%);
   float: none;
   object-fit: scale-down;
-  max-width: 100%;
+  max-width: 95%;
 }
 
 /* --------------------------- FOOTER ------------------------------ */
@@ -336,7 +341,7 @@ p {
   /* border: solid red; */
   max-width: 1000px;
   align-items: center;
-  margin-left: 310px;
+  margin-left: 200px;
 }
 .grid > div {
   /* background: black; */
@@ -356,7 +361,7 @@ p {
   grid-area: 1 / 1 / 2 / 2;
 }
 .grid > div > img {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
   object-fit: contain;
 }
