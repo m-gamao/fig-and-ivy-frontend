@@ -1,5 +1,6 @@
 <!-- line 7 links the style.css sheet to this html file -->
 <!-- Whatever code you write in the <body> tag will be displayed on our web page -->
+<!-- Everything is written from left to right on the screen -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,394 +8,423 @@
     <meta charset="UTF-8" />
     <title>Fig & Ivy E-commerce store</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-<!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet"> -->
 
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NOTE: Always include the CDN from font awesome in order to use their icons!!!! as below -->
+    <script src="https://kit.fontawesome.com/1f020fa7b0.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
     <script src="/path/to/flickity.pkgd.min.js"></script>
-  <div class="top-container">
-        <div class="logo">
-          <h1>Fig & Ivy</h1>
-          <!-- <img src="images/vine5.png" width="900px" height="200px"/> -->
-        </div>
-                  <div class="nav-right">
-              <i class="fas fa-shopping-bag"></i>
-          </div> 
-</div>
+    <div class="top-container">
+      <div class="logo">
+        <h1>Fig & Ivy</h1>
+        <!-- <img src="images/vine5.png" width="900px" height="200px"/> -->
+      </div>
+    </div>
 
-<!---------------------- HEADER AND NAV BAR --------------------------------------->
-<div class="header" id="myHeader">
-      <div class="navbar">            
-          <nav>
-           <ul>
+    <!---------------------- HEADER AND NAV BAR --------------------------------------->
+    <div class="header" id="myHeader">
+      <div class="navbar">
+        <div class="nav-left">
+        Log in  <i class="fa fa-sign-in"></i>
+        </div>
+        <nav>
+          <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Beauty</a></li>
             <li><a href="">Accessories</a></li>
             <li><a href="">Gifts</a></li>
             <li><a href="">Inspiration</a></li>
-           </ul>
-          </nav>
-          
-          <!-- <div class="nav-right">
-              <i class="fas fa-shopping-bag"></i>
-          </div>  -->
+          </ul>
+        </nav>
 
+        <div class="nav-right">
+          <i class="fas fa-shopping-bag"></i>
+          <!-- need to add href link to shopping cart page here -->
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook-official" ></i>
+        </div>
       </div>
-</div>
+    </div>
 
-<div class="content">
-<div>
-  <div class="splash">
-    <div class="container">
+    <div class="content">
+      <div>
+        <div class="splash">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <h1>Get ready for Spring!</h1>
+                <br />
+                <!-- <h1>Spring favorites are here</h1><br> -->
+                <em
+                  ><h2>
+                    “Fashion fades, only style remains the same.”<br />
+                    - Coco Chanel
+                  </h2></em
+                >
 
-          <div class="row">
-           <div class="col-2">
-             <h1>Get ready for Spring!</h1><br>
-            <!-- <h1>Spring favorites are here</h1><br> -->
-            <em><h2>“Fashion fades, only style remains the same.”<br> - Coco Chanel</h2></em>
-
-            <a href="" class="btn">Shop Now &#8594</a>
-            </div>
-            <div class="col-2">
-              <div class="image_wrapper">
-                <img src="images/coco.png"/>
+                <a href="" class="btn">Shop Now &#8594;</a>
+              </div>
+              <div class="col-2">
+                <div class="image_wrapper">
+                  <img src="images/coco.png" />
                 </div>
+              </div>
             </div>
-      </div>
-    </div>
-  </div>  
-
-  <!----------------------- FEATURED CATEGORIES ------------------------------->
-
-    <div class="categories">
-      <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-              <img src="images/Averraglow.jpg">
-            </div>
-            <div class="col-3">
-              <img src="images/nail.png">
-            </div>
-            <!-- <div class="col-3"></div>
-              <img src="images/estee2.jpg">
-            </div> -->
+          </div>
         </div>
-      </div>  
-    </div>
 
-<!---------------------------- FEATURED PRODUCTS -------------------------------->
+        <!----------------------- FEATURED CATEGORIES ------------------------------->
 
-<div class="small-container">
-  <h2 class="title">Featured Products</h2>
-  <div class="row">
-      <div class="col-4">
-          <img src="images/gucci.webp">
-          <h4>Gucci</h4>
-          <h5>Flora Gorgeous Gardenia Eau de Toilette For Her Mini Set</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+        <div class="categories">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-3">
+                <img src="images/Averraglow.jpg" />
+              </div>
+              <div class="col-3">
+                <img src="images/nail.png" />
+              </div>
+              <div class="col-3">
+                <img src="images/estee2.jpg" />
+              </div>
+            </div>
           </div>
-          <p>$39.00</p>
-      </div>
-      <div class="col-4">
-          <img src="images/facelotion.webp">
-          <h4><em>fresh</em></h4>
-          <h5>Lotion Anti-Aging Night Moisturizer</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-          </div>
-        <p>$52.00</p>
-      </div>
-
-      <div class="col-4">
-          <img src="images/fenty.webp">
-          <h4>Fenty Beauty by Rihanna</h4>
-          <h5>Pro Filt'r Soft Matte Powder Foundation</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$36.00</p>
-      </div>
-
-      <div class="col-4">
-          <img src="images/guer1.webp">
-          <h4>Guerlain</h4>
-          <h5>Mon Guerlain Eau de Parfum Intense</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-          </div>
-          <p>$148.00</p>
-      </div>
-  </div>
-
- <!---------------------- Latest Products ---------------------------------------->
-
- <h2 class="title">Latest Products</h2>
- <div class="row">
- <div class="col-4">
-          <img src="images/sephorabrush.webp">
-          <h4>Sephora</h4>
-          <h5>Makeup brush set</h5>
-          <!-- <h4> Givenchy L'Interdit Eau de Parfum 1.7 oz / 50mL</h4> -->
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-          </div>
-          <p>$25.00</p>
-      </div>
-        <div class="col-4">
-          <img src="images/givenchy1.webp">
-          <h4>Givenchy</h4>
-          <h5>L'Interdit Eau de Parfum 1.7 oz / 50mL</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$52.00</p>
-      </div>
-      <div class="col-4">
-          <img src="images/lauder.webp">
-          <h4>Estee Lauder</h4>
-          <h5>Nutritious Super-Pomegranate Radiant Energy Moisture Crème</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-          </div>
-          <p>$25.00</p>
-      </div>
-      <div class="col-4">
-          <img src="images/olek.webp">
-          <h4>Olehenriksen</h4>
-          <h5>Daily Cleanser</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-          </div>
-          <p>$45.00</p>
-      </div>
- </div>
- <!------------------------- 2nd row  -------------------------------->
-
- <div class="row">
- <div class="col-4">
-          <img src="images/yves2.webp">
-          <h4>Yves Saint Laurent Parisienne</h4>
-          <h5>1.6 oz Eau de Parfum Spray</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-          </div>
-          <p>$65</p>
         </div>
-      <div class="col-4">
-          <img src="images/powder.webp">
-          <h4>Guerlain</h4>
-          <h5>Terracotta Light Natural Healthy Glow and Radiance Bronzing Powder</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$56.00</p>
-      </div>
-      <div class="col-4">
-          <img src="images/dewy.webp">
-          <h4>Tatcha</h4>
-          <h5>The Dewy Skin Cream</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-          </div>
-          <p>$250.00</p>
-      </div>
-      <div class="col-4">
-          <img src="images/nest.webp">
-          <h4>Nest</h4>
-          <h5>Hand Sanitizing Gel</h5>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$15.00</p>
-        
-      </div> 
- </div>
- </div>
 
-<!------------------------ OFFER -------------------------->
-<div class="offer">
-    <div class="small-container">
+        <!---------------------------- FEATURED PRODUCTS -------------------------------->
+
+        <div class="small-container">
+          <h2 class="title">Featured Products</h2>
           <div class="row">
-              <div class="col-2">    
-                <img src="images/guerlain.png" class="offer-img"/>         
+            <div class="col-4">
+              <img src="images/gucci.webp" />
+              <h4>Gucci</h4>
+              <h5>Flora Gorgeous Gardenia Eau de Toilette For Her Mini Set</h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>$39.00</p>
+            </div>
+            <div class="col-4">
+              <img src="images/facelotion.webp" />
+              <h4><em>fresh</em></h4>
+              <h5>Lotion Anti-Aging Night Moisturizer</h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$52.00</p>
+            </div>
+
+            <div class="col-4">
+              <img src="images/fenty.webp" />
+              <h4>Fenty Beauty by Rihanna</h4>
+              <h5>Pro Filt'r Soft Matte Powder Foundation</h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$36.00</p>
+            </div>
+            <div class="col-4">
+              <img src="images/viktor.webp" />
+              <h4>Viktor&Rolf</h4>
+              <h5>Flowerbomb</h5>
+              <h6>1 oz/ 30 mL Eau de Parfum Spray</h6>
+              <!-- <h4>Givenchy</h4>
+          <h5>L'Interdit Eau de Parfum 1.7 oz / 50mL</h5> -->
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$165.00</p>
+            </div>
+          </div>
+
+          <!---------------------- Latest Products ---------------------------------------->
+
+          <h2 class="title">Latest Products</h2>
+          <div class="row">
+            <div class="col-4">
+              <img src="images/sephorabrush.webp" />
+              <h4>Sephora</h4>
+              <h5>Makeup brush set</h5>
+              <!-- <h4> Givenchy L'Interdit Eau de Parfum 1.7 oz / 50mL</h4> -->
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>$25.00</p>
+            </div>
+            <div class="col-4">
+              <img src="images/chance.webp" />
+              <h4>Chanel</h4>
+              <h5>Chance eau Fraiche Eau de Toilette</h5>
+              <h6>3.4 oz Eau de Toilette Spray</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$148.00</p>
+            </div>
+            <div class="col-4">
+              <img src="images/lauder.webp" />
+              <h4>Estee Lauder</h4>
+              <h5>
+                Nutritious Super-Pomegranate Radiant Energy Moisture Crème
+              </h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>$25.00</p>
+            </div>
+            <div class="col-4">
+              <img src="images/olek.webp" />
+              <h4>Olehenriksen</h4>
+              <h5>Daily Cleanser</h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>$45.00</p>
+            </div>
+          </div>
+          <!------------------------- 2nd row  -------------------------------->
+
+          <div class="row">
+            <div class="col-4">
+              <img src="images/yves2.webp" />
+              <h4>Yves Saint Laurent Parisienne</h4>
+              <h5>1.6 oz Eau de Parfum Spray</h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p>$65</p>
+            </div>
+            <div class="col-4">
+              <img src="images/powder.webp" />
+              <h4>Guerlain</h4>
+              <h5>
+                Terracotta Light Natural Healthy Glow and Radiance Bronzing
+                Powder
+              </h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$56.00</p>
+            </div>
+            <div class="col-4">
+              <img src="images/dewy.webp" />
+              <h4>Tatcha</h4>
+              <h5>The Dewy Skin Cream</h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>$250.00</p>
+            </div>
+            <div class="col-4">
+              <img src="images/nest.webp" />
+              <h4>Nest</h4>
+              <h5>Hand Sanitizing Gel</h5>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$15.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------ OFFER -------------------------->
+        <div class="offer">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-2">
+                <img src="images/guerlain.png" class="offer-img" />
               </div>
               <div class="col-2">
                 <p>Exclusively available on Fig & Ivy</p>
                 <h2>MON GUERLAIN eau de parfum</h2>
-                  <p2>1.7 oz / 50mL</p2><br><br>
-                   <p3>$85</p3><br>
-                   <em>(Original retail price $105)</em>
-                <br>
+                <p2>1.7 oz / 50mL</p2><br /><br />
+                <p3>$85</p3><br />
+                <em>(Original retail price $105)</em>
+                <br />
                 <a href="" class="btn">Buy Now &#8594;</a>
               </div>
-          </div>
-    </div>
- </div>
- </div>  
-
- <!---------------------- testimonials --------------------------->
-
- <div class="main-gallery js-flickity"
-  data-flickity-options='{ "cellAlign": "left", "contain": true }'>
- <h2 class="title">Testimonials</h2>
- <div class="testimonial">
-  <div class="small-container">
-    <div class="row">
-      <div class="col-3">
-        <i class="fa fa-quote-left"></i>
-        <p>
-          A friend of mine told me about this site a few years ago and I love their products. They have great customer service!
-          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
-        </p>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-          </div>
-                    <h3>Rana S.</h3>
-          <img src="images/avatar1.jpg"/>
-
-      </div>
-        <div class="col-3">
-        <i class="fa fa-quote-left"></i>
-        <p>
-          They have really great prices for all your favorite fragrances and cosmetics. High quality products and they ship on time :)
-           
-        </p>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-          </div>
-                    <h3>Sam V.</h3>
-          <img src="images/avatar2.jpg"/>
-          
-
-      </div>
             </div>
-
-        <!-- <div class="col-3">
-        <i class="fa fa-quote-left"></i>
-        <p>
-          I've always shopped on this site because it has all my favorite brands. I like the free gifts with the exclusive products every month!
-           
-         </p>
-          <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-          </div>
-                    <h3>Veronica S.</h3>
-          <img src="images/avatar3.jpg"/> -->
-
-      </div> 
-    </div>
-  </div>
-</div>
- </div>
- </div>
-
-<!-- --------------------- BRANDS ------------------------------------- -->
-
-<div class="brands">
-  <div class="small-container">
-        <div class="row">
-          <div class="col-5">
-              <img src="images/brands/fresh.png">
-          </div>
-          <div class="col-5">
-              <img src="images/brands/logo-clinique.png">
-          </div>
-          <div class="col-5">
-              <img src="images/brands/logo-nars.png">
-          </div>
-          <div class="col-5">
-              <img src="images/brands/logo-tom.png">
-          </div>
-          <div class="col-5">
-              <img src="images/brands/shish.png">
           </div>
         </div>
-  </div>
-</div>
+      </div>
+
+      <!---------------------- testimonials --------------------------->
 
 
- <!----------------------- AS SEEN IN -------------------------->
+        <h2 class="title">Testimonials</h2>
+        <div class="testimonial">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                  A friend of mine told me about this site a few years ago and I
+                  love their products. They have great customer service!
+                  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <h3>Rana S.</h3>
+                <div class="image_wrapper">
+                  <img src="images/avatar1.jpg" />
+                </div>
+              </div>
+              <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                  They have really great prices for all your favorite fragrances
+                  and cosmetics. High quality products and they ship on time :)
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <h3>Sam V.</h3>
+                <div class="image_wrapper">
+                  <img src="images/avatar2.jpg" />
+                </div>
+              </div>
 
- <h2 class="title">As Seen in</h2>
-   <div class="grid">
-     <div><img src="images/elle.png"/></div>
-      <div><img src="images/vogue.png" alt=""/></div>
-      <div><img src="images/allure.png"/></div>
-      <div><img src="images/instyle.jpg"/></div>
-   
-        <!-- <i class="fa fa-quote-left"></i> -->
-   </div>
+              <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                  I've always shopped on this site because it has all my
+                  favorite brands. I like the free gifts with the exclusive
+                  products!
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <h3>Veronica S.</h3>
+                <div class="image_wrapper">
+                  <img src="images/avatar3.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- --------------------- BRANDS ------------------------------------- -->
 
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/brands/fresh.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/brands/logo-clinique.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/brands/logo-nars.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/brands/logo-tom.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/brands/shish.png" />
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!----------------------- AS SEEN IN -------------------------->
 
-</body>
+    <h2 class="title">As Seen in</h2>
+    <div class="grid">
+      <div><img src="images/elle.png" /></div>
+      <div><img src="images/vogue.png" alt="" /></div>
+      <div><img src="images/allure.png" /></div>
+      <div><img src="images/instyle.jpg" /></div>
+
+      <!-- <i class="fa fa-quote-left"></i> -->
+    </div>
+  </body>
 </html>

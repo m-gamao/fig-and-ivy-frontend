@@ -1,5 +1,6 @@
 /* asterisk on line 3 allows these things to apply to all html elements */
 
+/* --------------------------- TOP CONTAINER --------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -26,12 +27,8 @@ body {
   opacity: 0.3;
   z-index: 2;
 }
-.top-container .nav-right {
-  position: absolute;
-  right: 40px;
-}
 
-/*-------------------- HEADER AND NAV BAR ---------------------------- */
+/*------------------------------ HEADER / NAV BAR ------------------------------- */
 
 .header {
   padding: 10px 10px;
@@ -40,6 +37,28 @@ body {
   height: 62px;
   text-align: center;
   font-size: 18px;
+}
+.nav-left {
+  color: white;
+  position: relative;
+  left: 50px;
+}
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 50px;
+  color: white;
+}
+/* position relative means relative to where it is now. Then you need to provide the direction 
+like right or left,etc */
+.nav-right i {
+  color: white;
+  /* margin-right: 70px; */
+}
+
+.nav-right i:not(:last-child) {
+  margin-right: 15px;
 }
 .navbar {
   display: flex;
@@ -51,7 +70,8 @@ nav {
   text-align: center;
 }
 
-/* no bullets, use list style type none */
+/* no bullets, use list style type none. In-line block takes up it's own line and only as
+much space as it needs to. */
 nav ul {
   display: inline-block;
   list-style-type: none;
@@ -73,6 +93,9 @@ p {
 .content {
   padding: 10px;
 }
+
+/* --------------------- MAKE THE NAV BAR STICKY FOR SCROLLING ------------------ */
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -84,6 +107,8 @@ p {
 .sticky + .content {
   padding-top: 102px;
 }
+
+/* ----------------------------- HERO IMAGE - WELCOME --------------------------- */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -125,7 +150,7 @@ p {
 }
 .splash {
   background: radial-gradient(#fff, #fccadf);
-  height: 100vh;
+  height: 75vh;
 }
 .splash .row {
   /* margin-top: 20px; */
@@ -143,6 +168,7 @@ p {
 }
 
 /* Add white space between top of this section and the splash above it */
+/* NOTES: Margin is the space outside the element. Padding is the space within the element. */
 .categories {
   margin: 70px 0;
 }
@@ -152,9 +178,9 @@ p {
   /* margin-bottom: 30px; */
 }
 .col-3 img {
-  float: left;
-  width: 350px;
-  height: 450px;
+  /* float: left; */
+  width: 300px;
+  height: 400px;
   object-fit: cover;
 }
 .small-container {
@@ -258,28 +284,38 @@ p {
   font-family: 80;
 }
 /* ------------------------ TESTIMONIALS ------------------------ */
+/* Notes: always put a dot in front of a CLASS NAME. */
 
 .testimonial .col-3 {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   max-width: 300px;
+  align-items: center;
+  height: 350px;
+  /* border: 1px solid blue; */
 }
 
-@media screen and ( min-width: 768px ) {
-  /* half-width cells for larger devices */
-  .testimonial .col-3 { width: 50%; }
+/* @media screen and ( min-width: 768px ) { */
+/* half-width cells for larger devices */
+/* .testimonial .col-3 { width: 50%; } */
+/* } */
+.testimonial .col-3 .image_wrapper {
+  width: 125px;
+  margin: 0 auto;
 }
 .testimonial .col-3 img {
   /* width: 50px; */
   margin-top: 19px;
-  /* border-radius: 50%; */
+  /* border: 1px solid red; */
+  border-radius: 50%;
   height: 120px;
-  object-fit: scale-down;
+  width: 100%;
+  /* object-fit: scale-down; */
   /* padding: 40px 20px; */
   transition: transform 0.5s;
-  align-items: center;
+  /* align-items: center; */
 }
 .testimonial p {
   color: rgb(39, 37, 37);
@@ -294,9 +330,8 @@ p {
 /* Need to make this transition smoother */
 /* .testimonial .col-3:hover {
   transform: translateY(-10px); */
-  /* transform: translateZ(-10px); */
-  /* rotateZ(360deg); */
-}
+/* transform: translateZ(-10px); */
+/* rotateZ(360deg); */
 
 .fa.fa-quote-left {
   font-size: 34px;
