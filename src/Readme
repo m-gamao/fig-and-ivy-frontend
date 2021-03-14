@@ -1,11 +1,6 @@
-Next:
-1. Add shopping cart to nav bar (ask NW to help) (30mins)
-2. Set up User Authentication. REALLY MASTER THAT! Research all day tomorrow. (4hrs)
-3. Post on linkedin (demo) preview.
-4. Set up the nav links.
-5. Set up the payment and cart page.
-6. Add chat bot.*or maybe not 
-7. Record demo - post on linkedin.
-8. Revise readme for deployment.
-9. Deploy app with heroku.
-Extras: Add carousel to testimonials or something.
+About this app:
+This is an ecommerce website for beauty products. I started with the UI and am currently
+working on developing the user authentication piece so that user's can create accounts.
+The backend repo is located at: https://github.com/m-gamao/recipe_app_backend.git
+
+
